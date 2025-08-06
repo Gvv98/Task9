@@ -14,7 +14,7 @@ The program is executed using the package openmpi, thus install it:
 ```
 yum install -y openmpi openmpi-devel
 ```
-The code is reported below. Copy it and run the compiled code with
+The code is reported in [parallelMPIsum.c](https://github.com/Gvv98/Task9/blob/main/parallelMPIsum.c). Copy it and run the compiled code with
 ```bash
 mpirun -np <num_processes> ./program N a xval yval
 ```
