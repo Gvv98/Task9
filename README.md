@@ -9,7 +9,7 @@
 
 
 ## MPI
-This MPI-based program performs a parallel computation on $N$-dimensional vectors $\vec{d}=a\cdot\vec{x}+\vec{y}$. The user provides $N$, a scalar $a$, and 2 initial values for $\vec{x}$ and $\vec{y}. First, we will use the packe
+This MPI-based program performs a parallel computation on $N$-dimensional vectors $$\vec{d}=a\cdot\vec{x}+\vec{y}$$. The user provides $N$, a scalar $a$, and 2 initial values for $$\vec{x}$$ and $$\vec{y}$$. First, we will use the packe
 The program is executed using the package openmpi, thus install it:
 ```
 yum install -y openmpi openmpi-devel
