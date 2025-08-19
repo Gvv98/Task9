@@ -48,7 +48,7 @@ An example for a standard computer is:
 ```
 After choosing the numer of cores to use, compile code with
 ```bash
-mpicc -O2 -o program program.c
+mpicc -O2 -o program parallelMPIsum.c
 ```
 and run with 
 ```bash
