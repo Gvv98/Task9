@@ -48,6 +48,10 @@ An example for a standard computer is:
 ```
 After choosing the numer of cores to use, compile code with
 ```bash
+mpicc -O2 -o program program.c
+```
+and run with 
+```bash
 mpirun --mca pml ob1 --allow-run-as-root --oversubscribe --use-hwthread-cpus -np <num_processes> ./program N a xval yval
 ```
 where ``<num_processes>`` defines the number of logic cores, ``--allow-run-as-root --oversubscribe --use-hwthread-cpus`` allows to use not only physical cores and ``program`` is the compiled code name. The number of cores for this task define ``size``. Then each of them is assigned a unique identifier (an integer number) called ``rank``, and the total number of processes is retrieved by calling ``MPI-provided`` functions:
