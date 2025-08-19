@@ -73,7 +73,7 @@ int offset = (rank < remainder) ? rank * (chunk + 1) : rank * chunk + remainder;
 
 The division ensures that each process gets roughly the same number of elements, and if ``N`` is not perfectly divisible, the first few processes receive one extra element. Based on the rank, each process determines how many elements it is responsible for (``local_N``) and where its portion starts (``offset``).
 
-Each process initializes its portion of vectors x and y and performs a local computation for the sum vecotr ``d``:
+Each process initializes its portion of vectors x and y and performs a local computation for the sum vector ``d``:
 ```
 for (int i = 0; i < local_N; i++) {
     x_local[i] = xval;
