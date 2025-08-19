@@ -3,7 +3,7 @@
 ## OpenMP
 This program in C performs a parallel computation on $N$-dimensional vectors $$\vec{d}=a\cdot\vec{x}+\vec{y}$$ using OpenMP. The full code is reported in [parallelopenMP.c](https://github.com/Gvv98/Task9/blob/main/parallelopenMP.c) .
 
-The program begins by taking five command-line arguments: the number of elements $$N$$, the number of threads ``num_threads``, a scalar $$a$$, and two values $$xval$$ and $$yval$ used to initialize the vectors $$\vec{x}$$ and $$\vec{y}$$. Memory is dynamically allocated for 4 arrays: ``x``, ``y``, ``d_serial``, and ``d_parallel``.  ``x`` and ``y`` are filled with the constant values xval and yval.
+The program begins by taking five command-line arguments: the number of elements $$N$$, the number of threads ``num_threads``, a scalar $$a$$, and two values $$xval$$ and $yval$ used to initialize the vectors $$\vec{x}$$ and $$\vec{y}$$. Memory is dynamically allocated for 4 arrays: ``x``, ``y``, ``d_serial``, and ``d_parallel``.  ``x`` and ``y`` are filled with the constant values xval and yval.
 
 The first part of the computation is done serially followewing the standard logic: a for loop calculates each element of the output vector ``d_serial``. The time for this computation is measured using omp_get_wtime():
 ```
