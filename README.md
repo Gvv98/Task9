@@ -37,7 +37,7 @@ The program is executed using the package openmpi, thus install it:
 ```
 yum install -y openmpi openmpi-devel
 ```
-The code is reported in [parallelMPIsum.c](https://github.com/Gvv98/Task9/blob/main/parallelMPIsum.c). Befor startign, check the number of avaible cores using 
+The code is reported in [parallelMPIsum.c](https://github.com/Gvv98/Task9/blob/main/parallelMPIsum.c). Befor starting, check the number of avaible cores using 
 ```
 lscpu
 ```
